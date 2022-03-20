@@ -1,6 +1,8 @@
+import { Mensagem } from "./style/GlobalStyle";
+
 function App() {
   return (
-      <h1>Todo - List</h1>
+      <Mensagem>Todo - List</Mensagem>
   );
 }
 
