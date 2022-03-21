@@ -1,5 +1,11 @@
+import { AddLista } from "../components/AddLista/AddLista";
+import { Lista } from "../components/Lista/Lista";
+
 export function Home(){
     return(
-        <h1>Home acessado com sucesso!</h1>
+        <>
+            <AddLista/>
+            <Lista/>
+        </>
     )
 }
