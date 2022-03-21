@@ -1,8 +1,12 @@
-import { Mensagem } from "./style/GlobalStyle";
+import { Routers } from "./router";
+import * as C from "./style/GlobalStyle";
 
 function App() {
   return (
-      <Mensagem>Todo - List</Mensagem>
+    <C.Container>
+      <C.GlobalStyle/>
+      <Routers/>
+    </C.Container>
   );
 }
 
