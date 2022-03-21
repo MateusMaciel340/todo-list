@@ -1,13 +1,21 @@
 import * as C from "./style";
+import { Item } from "../../@types/Item";
 
-export const Lista = () => {
+type Props = {
+    item: Item,
+    onChange: (id: number, status: boolean) => void
+}
+
+export const Lista = ({ item, onChange }: Props) => {
     return(
         <>
-            <C.ListaStyle>
+            <C.ListaStyle status={item.status}>
                 <input 
                     type="checkbox"
+                    checked={item.status}
+                    onChange={e => onChange(item.id, e.target.checked)}
                 />
-                <label>Mensagem</label>
+                <label>{item.nome}</label>
             </C.ListaStyle>
         </>
     )
