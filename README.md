@@ -33,7 +33,7 @@ O escopo do projeto foi dividido em componentes, existem 2 componentes gerais, s
 - [x] pages/index.tsx
 - [x] addLista/AddLista.tsx 
 
-### O que utilizado dentro do Projeto?
+### O que foi utilizado dentro do Projeto?
 
 #### Styled-Components
 
